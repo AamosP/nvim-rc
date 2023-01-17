@@ -39,7 +39,6 @@ require("catppuccin").setup({
             enabled = true,
             enabled_ui = false,
         },
-        barbar = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })

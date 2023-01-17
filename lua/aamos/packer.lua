@@ -56,6 +56,13 @@ return require('packer').startup(function(use)
         config = function() require("tmux").setup() end
     })
     use('nvim-tree/nvim-web-devicons')
-    use 'feline-nvim/feline.nvim'
     use 'mfussenegger/nvim-dap'
+    use 'ThePrimeagen/vim-be-good'
+    use 'github/copilot.vim'
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+    use 'nvim-lua/lsp-status.nvim'
+    use 'airblade/vim-gitgutter'
 end)
