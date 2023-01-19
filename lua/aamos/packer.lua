@@ -16,9 +16,6 @@ return require('packer').startup(function(use)
     use({
         "catppuccin/nvim",
         as = "catppuccin",
-        config = function()
-            vim.cmd('colorscheme catppuccin')
-        end
     })
 
     use('nvim-treesitter/nvim-treesitter', { run = function()
@@ -66,4 +63,6 @@ return require('packer').startup(function(use)
     use 'nvim-lua/lsp-status.nvim'
     use 'airblade/vim-gitgutter'
     use 'kdheepak/lazygit.nvim'
+    use "EdenEast/nightfox.nvim"
+    use 'preservim/nerdcommenter'
 end)
