@@ -65,4 +65,8 @@ return require('packer').startup(function(use)
     use 'kdheepak/lazygit.nvim'
     use "EdenEast/nightfox.nvim"
     use 'preservim/nerdcommenter'
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+    })
 end)

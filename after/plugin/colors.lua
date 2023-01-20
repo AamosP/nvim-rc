@@ -47,6 +47,11 @@
 --vim.cmd.colorscheme "catppuccin"
 
 function ColorMyPencils()
+    require('rose-pine').setup{
+        groups = {
+            background = '#111111'
+        }
+    };
     require('nightfox').setup({
         options = {
             styles = {
@@ -57,7 +62,7 @@ function ColorMyPencils()
         }
     })
 
-    vim.cmd.colorscheme "nightfox"
+    vim.cmd.colorscheme "rose-pine"
 end
 
 ColorMyPencils()
