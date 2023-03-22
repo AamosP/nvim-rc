@@ -52,8 +52,13 @@ return require('packer').startup(function(use)
         "aserowy/tmux.nvim",
         config = function() require("tmux").setup() end
     })
-    use('nvim-tree/nvim-web-devicons')
+
+    use 'kyazdani42/nvim-web-devicons'
     use 'mfussenegger/nvim-dap'
+    use 'rcarriga/nvim-dap-ui'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
+
     use 'ThePrimeagen/vim-be-good'
     use 'github/copilot.vim'
     use {
@@ -69,4 +74,6 @@ return require('packer').startup(function(use)
         'rose-pine/neovim',
         as = 'rose-pine',
     })
+    use 'tpope/vim-commentary'
+    use 'rubixninja314/vim-mcfunction'
 end)
