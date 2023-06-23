@@ -259,11 +259,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aamos/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
-  },
-  ["vim-mcfunction"] = {
-    loaded = true,
-    path = "/home/aamos/.local/share/nvim/site/pack/packer/start/vim-mcfunction",
-    url = "https://github.com/rubixninja314/vim-mcfunction"
   }
 }
 

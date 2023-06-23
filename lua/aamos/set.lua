@@ -32,3 +32,4 @@ vim.g.mapleader = " "
 
 vim.opt.cmdheight = 1
 
+vim.opt.guicursor = "a:block"
