@@ -74,4 +74,6 @@ return require('packer').startup(function(use)
         as = 'rose-pine',
     })
     use 'tpope/vim-commentary'
+    use 'scrooloose/syntastic'
+    use 'OmniSharp/omnisharp-vim'
 end)
