@@ -199,11 +199,6 @@ _G.packer_plugins = {
     path = "/home/aamos/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["omnisharp-vim"] = {
-    loaded = true,
-    path = "/home/aamos/.local/share/nvim/site/pack/packer/start/omnisharp-vim",
-    url = "https://github.com/OmniSharp/omnisharp-vim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/aamos/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -224,10 +219,10 @@ _G.packer_plugins = {
     path = "/home/aamos/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
-  syntastic = {
+  ["sg.nvim"] = {
     loaded = true,
-    path = "/home/aamos/.local/share/nvim/site/pack/packer/start/syntastic",
-    url = "https://github.com/scrooloose/syntastic"
+    path = "/home/aamos/.local/share/nvim/site/pack/packer/start/sg.nvim",
+    url = "https://github.com/sourcegraph/sg.nvim"
   },
   ["telescope-dap.nvim"] = {
     loaded = true,
