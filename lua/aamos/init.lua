@@ -2,8 +2,6 @@ require("aamos.set")
 require("aamos.remap")
 require("aamos.lazy_init")
 
-ColorMyPencils("rose-pine-moon")
-
 local dap = require("dap")
 dap.adapters.c = {
 	type = "executable",

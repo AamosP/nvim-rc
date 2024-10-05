@@ -30,10 +30,12 @@ return {
 				disable_background = true,
 			})
 			vim.cmd("colorscheme rose-pine")
+			ColorMyPencils()
 		end
 	},
 	{
 		"folke/fakedonalds.nvim",
 		name = "fakedonalds",
 	},
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... }
 }
