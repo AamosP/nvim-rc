@@ -14,6 +14,7 @@ return {
 			"j-hui/fidget.nvim",
 		},
 		config = function()
+			require("neoconf").setup()
 			local cmp = require("cmp")
 			local cmp_lsp = require("cmp_nvim_lsp")
 			local capabilities = vim.tbl_deep_extend(
@@ -34,7 +35,7 @@ return {
 					function(server_name)
 						require("lspconfig")[server_name].setup({
 							capabilities = capabilities,
-							root_dir = function ()
+							root_dir = function()
 								return vim.env.PWD
 							end,
 						})
@@ -47,7 +48,10 @@ return {
 									diagnostics = {
 										globals = {
 											"vim"
-										}
+										},
+										disable = {
+											"lowercase-global"
+										},
 									}
 								}
 							}

@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "rose-pine"
+	color = color or "gruvbox"
 	vim.cmd.colorscheme(color)
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { fg = "none" })
@@ -37,5 +37,14 @@ return {
 		"folke/fakedonalds.nvim",
 		name = "fakedonalds",
 	},
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... }
+	{
+		"ellisonleao/gruvbox.nvim",
+		priority = 1000,
+		config = function ()
+			require("gruvbox").setup()
+			vim.cmd.colorscheme("gruvbox")
+		end,
+		opts = {
+		}
+	}
 }
